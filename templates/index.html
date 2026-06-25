@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI Study Assistant</title>
+    <link rel="stylesheet" href="/static/style.css">
+</head>
+
+<body>
+
+<div class="container">
+
+    <div class="header">
+        <h1>📚 AI Study Assistant</h1>
+        <p>Your intelligent academic companion powered by AI</p>
+    </div>
+
+    <div class="card">
+
+        <h3>💬 Ask any academic question</h3>
+
+        <textarea
+            id="prompt"
+            placeholder="Ask any academic question..."
+        ></textarea>
+
+        <button onclick="generateResponse()">
+            ✨ Generate
+        </button>
+
+        <div class="help-box">
+            <strong>💡 Get instant help with:</strong><br>
+            Explanations • Summaries • Definitions • Concepts
+        </div>
+
+    </div>
+
+    <div class="card">
+
+        <h3>🤖 AI Response</h3>
+
+        <div id="output">
+            Your AI generated response will appear here...
+        </div>
+
+    </div>
+
+    <div class="features">
+
+        <div class="feature">
+            <h4>🛡 Reliable</h4>
+            <p>Accurate academic support</p>
+        </div>
+
+        <div class="feature">
+            <h4>⚡ Instant</h4>
+            <p>Answers in seconds</p>
+        </div>
+
+        <div class="feature">
+            <h4>🎓 Smart</h4>
+            <p>Powered by Groq Llama 3.3</p>
+        </div>
+
+    </div>
+
+    <footer>
+        ❤️ Developed using FastAPI + Groq Llama 3.3
+    </footer>
+
+</div>
+
+<script src="/static/script.js"></script>
+
+</body>
+</html>
