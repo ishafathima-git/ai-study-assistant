@@ -33,7 +33,7 @@ async function generateResponse(){
         await response.json();
 
         output.innerHTML =
-        data.response;
+data.response.replace(/\*\*(.*?)\*\*/g, "<strong>$1</strong>");
 
     }
     catch(error){
